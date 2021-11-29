@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="avicii"
+FDEVICE="billie"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -42,12 +42,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export OF_USE_GREEN_LED=1
 	
-	# Avicii Specific
+	# Billie Specific
 	export OF_AB_DEVICE=1
 	export OF_FBE_METADATA_MOUNT_IGNORE=1
 	export OF_STATUS_INDENT_LEFT=254
-	export OF_TARGET_DEVICES="avicii,Avicii,OnePlusNord,Nord,nord,OPNord,oneplusnord"
-	export TARGET_DEVICE_ALT="Avicii,OnePlusNord,Nord,nord,OPNord,oneplusnord"
+	export OF_TARGET_DEVICES="billie,OnePlusNordN10,OnePlusN10,Billie,OPNordN10,oneplusnordn10"
+	export TARGET_DEVICE_ALT="billie,OnePlusNordN10,OnePlusN10,Billie,OPNordN10,oneplusnordn10"
 
 	export OF_USE_MAGISKBOOT=1
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
@@ -83,7 +83,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_SCREEN_H=2400
 	export OF_STATUS_H=120
 	#export OF_STATUS_INDENT_LEFT=48 # For Most of the Devices
-	#export OF_STATUS_INDENT_LEFT=245 # Avicii Specific
+	#export OF_STATUS_INDENT_LEFT=245 # Billie Specific
 	export OF_STATUS_INDENT_RIGHT=48
 	export OF_ALLOW_DISABLE_NAVBAR=0
 

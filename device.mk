@@ -1,5 +1,5 @@
 
-LOCAL_PATH := device/oneplus/avicii
+LOCAL_PATH := device/oneplus/billie
 
 # define hardware platform
 PRODUCT_PLATFORM := lito

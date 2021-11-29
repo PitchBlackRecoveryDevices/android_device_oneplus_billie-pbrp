@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-LOCAL_PATH := device/oneplus/avicii
+LOCAL_PATH := device/oneplus/billie
 
 # Architecture
 TARGET_ARCH := arm64
@@ -78,7 +78,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno619L
 QCOM_BOARD_PLATFORMS += lito
 
 # Partitions
