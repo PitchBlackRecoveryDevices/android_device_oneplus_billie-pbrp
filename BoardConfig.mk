@@ -128,7 +128,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP specific build flags
-BOARD_HAS_NO_REAL_SDCARD := true
+BOARD_HAS_NO_REAL_SDCARD := false
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
