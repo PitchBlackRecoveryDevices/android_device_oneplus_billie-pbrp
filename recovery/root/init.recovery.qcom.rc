@@ -49,13 +49,6 @@ service sbinqseecomd /sbin/qseecomd
     disabled
     seclabel u:r:recovery:s0
 
-service prepdecrypt /sbin/prepdecrypt.sh
-    oneshot
-    disabled
-    user root
-    group root
-    seclabel u:r:recovery:s0
-
 service hwservicemanager /system/bin/hwservicemanager
     user root
     group root
@@ -137,7 +130,6 @@ on init
     start logd
     start hwservicemanager
     start boot-1-0
-    start prepdecrypt
     start time_daemon
     setprop crypto.ready 1
 
@@ -158,3 +150,8 @@ on property:vendor.sys.listeners.registered=true
 
 on property:sys.usb.config=mtp,adb
     restart time_daemon
+
+on property:sys.usb.config=fastboot
+    start servicemanager
+    start hwservicemanager
+    restart fastbootd
